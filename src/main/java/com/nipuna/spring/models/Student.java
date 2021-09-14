@@ -1,6 +1,11 @@
 package com.nipuna.spring.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Student {
+	@Id
 	private int indexNo;
 	private String firstName;
 	private String secondName;
@@ -63,5 +68,4 @@ public class Student {
 				+ lastName + ", address=" + address + ", contactNo=" + contactNo + ", grade=" + grade + ", isCurrent="
 				+ isCurrent + "]";
 	}
-	//okokokoookokookokokok git
 }
