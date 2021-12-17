@@ -31,7 +31,7 @@ public class StudentController {
 	
 	@RequestMapping(path="/students", produces="application/json")
 	public List<Student> getStudents() {
-		return (List<Student>) repo.findAll();
+		return repo.findByisCurrent((byte) 1);
 	}
 	
 	@RequestMapping(path="/student/{index}", produces="application/json")
